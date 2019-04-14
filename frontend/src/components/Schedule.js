@@ -5,7 +5,7 @@ import {TextField, Button} from '@material-ui/core';
 import swal from 'sweetalert';
 import './styles/schedule.css';
 
-const url = 'www.google.com';
+const url = 'https://c0c7dba0.ngrok.io/postcreatepack';
 class Schedule extends React.Component {
   state = {
     name: '',
@@ -29,17 +29,37 @@ class Schedule extends React.Component {
   };
 
   sendInfo = () => {
+    // let body = {
+    //     "Desc": this.state.trip,
+    //     "Dimen": this.state.dimensions,
+    //     "DName": this.state.name,
+    //     "PLA":this.state.address1,
+    //     "PLB": this.state.address2,
+    //     "UserID":0,
+    //     "Weight":this.state.weight,
+    //     "AdresseeEmail":  this.state.email,
+    //     "AdresseePhone": this.state.phone1,
+    //   };
     let body = {
-        "Desc": this.state.trip,
-        "Dimen": this.state.dimensions,
-        "Name": this.state.name,
-        "TimeA": this.state.date1,
-        "TimeL": this.state.date2,
-        "UserDestA":this.state.address1,
-        "UserDestB": this.state.address2,
-        "UserID":0,
-        "Weight":this.state.weight
-    };
+      "DName": "Jeffrey Ha",
+      "Desc": "Chocolate",
+      "Dimen": "12 x 12 x 12",
+      "PackageDID": 1,
+      "PackageID": 0,
+      "PLA": "123 Street",
+      "PLB": "321 Street",
+      "PackageName": "Awake Chocolate",
+      "Received": 0,
+      "ReceiverID": 2,
+      "ReceiverName": "Will Tran",
+      "SendeeID": 0,
+      "SendeeName": "Stanley Lee",
+      "Sent": 1,
+      "TID": 0,
+      "Weight": 12,
+      "AdresseeEmail": this.state.email,
+      "AdresseePhone": "6262728111"
+    }
     fetch(url, {
         method: 'POST',
         headers: {

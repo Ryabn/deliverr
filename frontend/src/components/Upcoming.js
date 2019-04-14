@@ -3,7 +3,7 @@ import {Typography} from '@material-ui/core';
 import UpcomingPanel from './UpcomingPanel';
 import './styles/upcoming.css';
 
-const entireDatabase = 'https://c0c3e916.ngrok.io/travelInfo/1';
+const entireDatabase = 'https://c0c7dba0.ngrok.io/travelInfo/1';
 
 export class Upcoming extends Component {
     state = {
@@ -27,9 +27,9 @@ export class Upcoming extends Component {
     render() {
         return (
         <div>
-            <div className="title-top">
-                <Typography variant="h3">UPCOMING</Typography>
-            </div>
+            <p className="title-top">
+                Upcoming
+            </p>
             <div id="upcoming-list">
                 {this.state.trips}
             </div>

@@ -5,7 +5,7 @@ import './styles/schedule.css';
 import swal from 'sweetalert';
 import {Button} from '@material-ui/core';
 
-const url = 'https://c0c3e916.ngrok.io/posttrip';
+const url = 'https://c0c7dba0.ngrok.io/posttrip';
 class Delivrr extends React.Component {
     state = {
         name: '',
@@ -62,7 +62,7 @@ class Delivrr extends React.Component {
                 <p className="addressee">Flight Info.</p>
 
                 <TextField
-                    className="name margin"
+                    className="name1 margin"
                     variant="outlined"
                     label="Trip Name"
                     value={this.state.name}
@@ -101,7 +101,7 @@ class Delivrr extends React.Component {
                     onChange={this.handleChange('date2')}
                 />
 
-                <hr size="1" width="60%" className="line"></hr>
+                <hr size="1" width="90%" className="line"></hr>
 
                 <p className="addressee">Package Info.</p>
 

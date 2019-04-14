@@ -1,7 +1,10 @@
-.title-top{
+.title-top {
     text-align: center;
     margin: 20px auto;
+    font-size: large;
+    color: #FF473A;
 }
+
 #upcoming-list{
     padding: 0 40px 40px 40px;
 }

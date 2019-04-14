@@ -9,7 +9,7 @@ export class Login extends Component {
     responseGoogle = () => {
         setTimeout(() => {
             this.props.history.push('./dash');
-        }, 2000);
+        }, 4000);
     }
     render() {
         return (
